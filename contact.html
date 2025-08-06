@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wanderwise Travel Co</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <h1>Wanderwise Travel Co</h1>
+        </div>
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="destination.html">Destinations</a></li>
+                <li><a href="tour.html">Tours</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hamburger" id="hamburger">
+            &#9776;
+        </div>
+    </header>
+
+<div class="contact-section">
+  <h2>Contact</h2>
+  <p>For commissions and project inquiries, please email: <a href="mailto:hello@junedigann.com">hello@junedigann.com</a> or send a message via this form.</p>
+  
+  <form action="#" method="POST" class="contact-form" id="contact-form" onsubmit="return validateForm()">
+    <div class="input-group">
+      <label for="first-name">First Name</label>
+      <input type="text" id="first-name" name="first-name" required placeholder="Enter your first name">
+    </div>
+
+    <div class="input-group">
+      <label for="last-name">Last Name</label>
+      <input type="text" id="last-name" name="last-name" placeholder="Enter your last name">
+    </div>
+
+    <div class="input-group">
+      <label for="email">Email *</label>
+      <input type="email" id="email" name="email" required placeholder="Enter your email" oninput="validateEmail()">
+      <span id="email-error" style="color: red; display: none;">Please enter a valid email.</span>
+    </div>
+
+    <div class="input-group">
+      <label for="message">Write a message</label>
+      <textarea id="message" name="message" rows="4" required placeholder="Write your message"></textarea>
+    </div>
+
+    <button type="submit" class="submit-btn">Submit</button>
+  </form>
+</div>
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-logo">
+            <h2>Wanderwise Travel Co</h2>
+            <p>Dive into local recommendations for a truly authentic experience.</p>
+        </div>
+
+        <div class="footer-columns">
+            <div class="footer-column">
+                <h3>Company</h3>
+                <ul>
+                    <li>About Us</li>
+                    <li>Community Blog</li>
+                    <li>Jobs & Careers</li>
+                    <li>Contact Us</li>
+                    <li>Our Awards</li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Services</h3>
+                <ul>
+                    <li>Tour Guide</li>
+                    <li>Tour Booking</li>
+                    <li>Hotel Booking</li>
+                    <li>Ticket Booking</li>
+                    <li>Rental Services</li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Legal</h3>
+                <ul>
+                    <li>Terms of Service</li>
+                    <li>Privacy Policy</li>
+                    <li>Cookies Policy</li>
+                    <li>Data Processing</li>
+                    <li>Data Policy</li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Support</h3>
+                <ul>
+                    <li>Forum support</li>
+                    <li>Help Center</li>
+                    <li>How it works</li>
+                    <li>Security</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-newsletter">
+            <h3>Newsletter</h3>
+            <input type="email" placeholder="Enter your email" />
+            <button>Subscribe</button>
+        </div>
+
+        <div class="footer-bottom">
+            <p>Need help? Call us: <span>0000000000</span></p>
+            <div class="social-media">
+                <p>Follow us</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
