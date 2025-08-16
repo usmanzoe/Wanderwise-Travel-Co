@@ -16,8 +16,9 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="destination.html">Destinations</a></li>
                 <li><a href="tour.html">Tours</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            
             </ul>
         </nav>
         <div class="hamburger" id="hamburger">
@@ -27,9 +28,9 @@
     <section class="hero-section">
         <div class="container">
             <div class="hero-content">
-                <h1>Top Destinations Await</h1>
-                <p>Welcome to our destination hub, where every journey begins with inspiration. Whether you're seeking a tropical getaway, a cultural immersion, or an adventurous escape, we have curated a collection of the most captivating destinations around the world. Our team of travel experts provides you with insider tips, local recommendations, and everything you need to create an unforgettable travel experience. From pristine beaches to historic cities, let us help you find the perfect place to explore. Your next adventure is just a click away!</p>
-                <a href="#learn-more" class="learn-more-btn">Explore More</a>
+                <h1>Our Story</h1>
+                <p>Welcome to our destination hub, where every journey begins with inspiration. Whether you're seeking a tropical getaway, a cultural immersion, or an adventurous escape, we have curated a collection of the most captivating destinations around the world. Our team of travel experts provides you with insider tips, local recommendations, and everything you need to create an unforgettable travel experience. From pristine beaches to historic cities, let us help you find the perfect place to explore.</p>
+                <a href="#text" class="learn-more-btn">Continue Reading</a>
             </div>
         </div>
     </section>
@@ -71,10 +72,11 @@
      <section class="company-section">
         <div class="company-content">
             <div class="company-image">
-                <img src="company.jpg">
+                <img src="j.jpeg">
             </div>
-            <div class="company-text">
+            <div class="company-text" id="text">
                 <h1>Wanderwise Travel Co</h1>
+                <h1>Our Story</h1>
                 <p class="quote">"Explore the world sustainably, one unforgettable journey at a time."</p>
                 <p>At Wanderwise Travel Co, we believe that travel is not just about visiting new places; it's about making a positive impact on the world. Our mission is to provide eco-conscious travel experiences that help preserve the beauty and diversity of the planet for future generations. With over a decade of experience in the travel industry, we've worked tirelessly to create unique, sustainable journeys that benefit both our clients and the communities we visit.<br>
 <br>
@@ -87,6 +89,35 @@ Join us in making the world a better place, one trip at a time. Together, let's 
             </div>
         </div>
     </section>
+    <div class="contact-section">
+  <h2>Contact</h2>
+  <p>For Tour inquiries, please email: <a href="mailto:hello@junedigann.com">mishalmalik12301192@gmail.com</a> or send a message via this form.</p>
+  
+  <form action="#" method="POST" class="contact-form" id="contact-form" onsubmit="return validateForm()">
+    <div class="input-group">
+      <label for="first-name">First Name</label>
+      <input type="text" id="first-name" name="first-name" required placeholder="Enter your first name">
+    </div>
+
+    <div class="input-group">
+      <label for="last-name">Last Name</label>
+      <input type="text" id="last-name" name="last-name" placeholder="Enter your last name">
+    </div>
+
+    <div class="input-group">
+      <label for="email">Email *</label>
+      <input type="email" id="email" name="email" required placeholder="Enter your email" oninput="validateEmail()">
+      <span id="email-error" style="color: red; display: none;">Please enter a valid email.</span>
+    </div>
+
+    <div class="input-group">
+      <label for="message">Write a message</label>
+      <textarea id="message" name="message" rows="4" required placeholder="Write your message"></textarea>
+    </div>
+
+    <button type="submit" class="submit-btn">Submit</button>
+  </form>
+</div>
     <footer class="footer">
     <div class="footer-container">
         <div class="footer-logo">
